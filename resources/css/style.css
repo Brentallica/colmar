@@ -5,6 +5,20 @@ html {
   font-size: 16px;
 }
 
+.container {
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
+}
+
+.lrgimage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+}
+
 /*  HEADER  */
 
 header {
@@ -14,7 +28,7 @@ header {
   align-items: center;
 }
 
-.left {
+.lefthead {
   display: flex;
   align-items: center;
 }
@@ -44,34 +58,28 @@ header {
   color: darkgray;
 }
 
-.right ul {
+.righthead ul {
   margin-right: 24px;
   display: flex;
 }
 
-.right a {
+.righthead a {
   padding-left: 16px;
   font-size: 1.5rem;
   text-decoration: none;
 }
 
+
+
 /* BANNER */
 
-.container1 {
-  background-color: gray;
-  padding: 32px 24px;
-  display: flex;
-  align-items: center;
-  height: 52rem;
+.container.banner {
+    height: 52rem;
+    background-color: gray;
 }
 
-.lrgimage {
+.bannerpic {
   background-image: url("../../resources/images/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 60%;
-  height: 100%;
 }
 
 .supporttext {
@@ -102,4 +110,5 @@ header {
   cursor: pointer;
   width: 400px;
   font-size: 2rem;
+  border: 3px solid black;
 }
