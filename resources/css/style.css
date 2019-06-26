@@ -1,3 +1,56 @@
-* {
+/* Universal Styles */
 
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/*  HEADER  */
+
+header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background-image: url("../../resources/images/ic-logo.svg");
+  height:50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 3px;
+  margin-left: 24px;
+}
+
+.companyname {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+#colmar {
+  font-weight: 900
+  color: black;
+}
+
+#academy {
+  font-weight: 400;
+  color: darkgray;
+}
+
+.right ul {
+  margin-right: 24px;
+  display: flex;
+}
+
+.right a {
+  padding-left: 16px;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
