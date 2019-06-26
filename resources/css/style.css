@@ -5,32 +5,35 @@ html {
   font-size: 16px;
 }
 
-.container {
+.container {  /* Main container used in each vertical section */
+  margin: 0px 100px;
   padding: 32px 24px;
   display: flex;
   align-items: center;
 }
 
-.lrgimage {
+.lrgimage {  /* Large picture container used in each subsection */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 60%;
   height: 100%;
+  width: 100%;
 }
 
-.leftcontainer {
-  background-color: blue;
+.leftcontainer {  /* Left side 60% width section used in each main container. */
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 60%;
 }
 
-.rightcontainer {
-  background-color: red;
+.rightcontainer {  /* Right side 40% width section used in each main container */
   display: flex;
   flex-direction: column;
+  height 100%;
+  width: 40%;
+  margin-left: 24px;
+  padding-left: 16px;
 }
 
 /*  HEADER  */
@@ -95,8 +98,7 @@ header {
 }
 
 .supporttext {
-  margin-left: 24px;
-  padding-left: 16px;
+
   line-height: 1.2;
   width: 450px;
 }
