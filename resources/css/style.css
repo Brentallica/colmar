@@ -54,3 +54,52 @@ header {
   font-size: 1.5rem;
   text-decoration: none;
 }
+
+/* BANNER */
+
+.container1 {
+  background-color: gray;
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
+  height: 52rem;
+}
+
+.lrgimage {
+  background-image: url("../../resources/images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+}
+
+.supporttext {
+  margin-left: 24px;
+  line-height: 1.2;
+  width: 450px;
+}
+
+.supporttext h1 {
+  font-size: 3.5rem;
+}
+
+.supporttext h2 {
+  font-size: 2rem;
+  font-family: serif;
+}
+
+.supporttext h1, h2, button {
+  padding-bottom: 2rem;
+}
+
+.button {
+  background-color: darkgray;
+  border-radius: 10px;
+  color: white;
+  padding: .5rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  width: 400px;
+  font-size: 2rem;
+}
