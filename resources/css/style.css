@@ -6,10 +6,10 @@ html {
 }
 
 .container {  /* Main container used in each vertical section */
-  margin: 0px 100px;
-  padding: 32px 24px;
+  margin: 0 100px 32px 100px;
+  padding: 0 24px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .containernoflex {  /* ALTERNATIVE Main container when FLEXBOX not needed (Footer) */
@@ -30,7 +30,6 @@ html {
   flex-direction: column;
   height: 100%;
   width: 60%;
-  background-color: lightblue;
 }
 
 .rightcontainer {  /* Right side 40% width section used in each main container */
@@ -39,7 +38,14 @@ html {
   height 100%;
   width: 40%;
   margin-left: 24px;
-  padding-left: 16px;
+}
+
+.rightcontainerboxes {  /* Right container sub section boxes */
+  display: flex;
+  height: 33%;
+  width: 100%;
+  border: 1px solid gray;
+  margin: 1px 0;
 }
 
 h1 {
@@ -52,6 +58,10 @@ h2 {
   font-family: serif;
 }
 
+h3 {
+  padding: 8px 0;
+}
+
 p {
   font-size: 1.5rem;
   font-family: serif;
@@ -60,6 +70,12 @@ p {
 footer {
   font-size: .75rem;
   font-family: sans-serif;
+}
+
+.supporttext {
+  line-height: 1.2;
+  align-self: center;
+  padding: 5px;
 }
 
 /*  HEADER  */
@@ -117,17 +133,18 @@ header {
 .container.banner {
     height: 52rem;
     background-color: gray;
+    align-items: center;
 }
 
 .bannerpic {
   background-image: url("../../resources/images/banner.jpg");
 }
 
-.supporttext {
-  line-height: 1.2;
+.bannersupporttext {
+  padding-left: 16px;
 }
 
-.supporttext h2, button {
+.bannersupporttext h2, button {
   padding-bottom: 2rem;
 }
 
@@ -146,7 +163,7 @@ header {
 /* LEARN */
 
 .container.learn {
-    height: 70rem;
+    height: 100%;
     background-color: white;
 }
 
@@ -155,7 +172,10 @@ header {
   height: 400px;
 }
 
-#learningfooter {
-  margin-top: -2.75rem;
-  z-index: 1;
+
+
+.rightcontainerboxes img {
+  width: 35%;
+  height: auto;
+  padding: 16px 16px;
 }
