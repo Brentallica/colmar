@@ -6,8 +6,8 @@ html {
 }
 
 .container {  /* Main container used in each vertical section */
-  margin: 0 100px 32px 100px;
-  padding: 0 24px;
+  margin: 0 100px;
+  padding: 32px 0 32px 24px;
   display: flex;
   align-items: flex-start;
 }
@@ -35,13 +35,14 @@ html {
 .rightcontainer {  /* Right side 40% width section used in each main container */
   display: flex;
   flex-direction: column;
-  height 100%;
+  /* height: auto; */
   width: 40%;
   margin-left: 24px;
 }
 
 .rightcontainerboxes {  /* Right container sub section boxes */
   display: flex;
+  align-items: center;
   height: 33%;
   width: 100%;
   border: 1px solid gray;
@@ -60,6 +61,11 @@ h2 {
 
 h3 {
   padding: 8px 0;
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 p {
@@ -74,8 +80,18 @@ footer {
 
 .supporttext {
   line-height: 1.2;
-  align-self: center;
   padding: 5px;
+}
+
+.rightcontainerboxes img {
+  width: 35%;
+  height: auto;
+  padding: 16px 16px;
+}
+
+.sectionheading {
+  text-align: center;
+  padding-bottom: 8px;
 }
 
 /*  HEADER  */
@@ -99,7 +115,7 @@ header {
   background-position: center;
   background-size: cover;
   margin-top: 3px;
-  margin-left: 24px;
+  margin-left: 124px;
 }
 
 .companyname {
@@ -128,16 +144,21 @@ header {
   text-decoration: none;
 }
 
+nav {
+  padding-right: 100px;
+}
+
 /* BANNER */
 
 .container.banner {
-    height: 52rem;
+    height: 100%;
     background-color: gray;
     align-items: center;
 }
 
 .bannerpic {
   background-image: url("../../resources/images/banner.jpg");
+  height: 500px;
 }
 
 .bannersupporttext {
@@ -172,10 +193,54 @@ header {
   height: 400px;
 }
 
+/* START LEARNING */
 
-
-.rightcontainerboxes img {
-  width: 35%;
-  height: auto;
-  padding: 16px 16px;
+.containernoflex.sectionheading {
+  padding: 0;
 }
+
+.container.startlearning {
+  align-items: stretch;
+  background-color: gray;
+  margin: 0 172px;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.rightcontainer.courses {
+  margin-left: 0;
+  margin-bottom: 32px;
+  background-color: white;
+  width: 32%;
+  align-items: stretch;
+}
+
+.rightcontainer.courses img {
+  width: 100%;
+}
+
+.supporttext.courses {
+  line-height: 1;
+  padding: 0;
+}
+
+.supporttext.courses h2 {
+  line-height: 1;
+  padding: 1rem 0 0 1rem;
+}
+
+.supporttext.courses h3 {
+  line-height: 1;
+  padding: .5rem 0 0 1rem;
+}
+
+.supporttext.courses h4 {
+  line-height: 1;
+  padding: .5rem 0 1.5rem 1rem;
+}
+
+
+/* THESIS EXHIBIT */
+
+/* FOOTER */
