@@ -96,7 +96,7 @@ footer {
 
 /*  HEADER  */
 
-header {
+header, footer {
   height: 64px;
   display: flex;
   justify-content: space-between;
@@ -201,7 +201,6 @@ nav {
 
 .container.startlearning {
   align-items: stretch;
-  background-color: gray;
   margin: 0 172px;
   flex-wrap: wrap;
   padding: 0;
@@ -240,7 +239,23 @@ nav {
   padding: .5rem 0 1.5rem 1rem;
 }
 
-
 /* THESIS EXHIBIT */
 
+.rightcontainerboxes.thesis {
+  border: none;
+}
+
 /* FOOTER */
+
+#footer {
+  color: gray;
+  margin-left: 124px;
+  height: auto;
+  margin-top: 1rem;
+}
+
+#footer a {
+  padding-left: 16px;
+  font-size: 1rem;
+  text-decoration: none;
+}
