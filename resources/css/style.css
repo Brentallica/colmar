@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
 }
 
@@ -10,11 +10,19 @@ html {
   padding: 2rem 0 2rem 1.5rem;
   display: flex;
   align-items: flex-start;
+  background-color: #FFF1C6;
+}
+
+.container:hover h1 {
+  text-shadow: 6px 3px darkgray;
+  transition: text-shadow 500ms linear;
 }
 
 .containernoflex {  /* ALTERNATIVE Main container when FLEXBOX not needed */
-  margin: 0px 100px;
+  margin: 30px 100px;
   padding: 0 1.5rem;
+  background-color: #FFF1C6;
+  border: 2px #BD912D solid;
 }
 
 .lrgimage {  /* Large picture container used in each subsection */
@@ -46,16 +54,24 @@ html {
   width: 100%;
   border: 1px solid gray;
   margin: 1px 0;
+  transition: background-color 250ms linear 250ms;
+}
+
+.rightcontainerboxes:hover {
+  background-color: #FFF1C6;
 }
 
 h1 {
   font-size: 3.5rem;
   margin: 2rem 0 1.5rem 0;
+  font-family: "Libre Franklin", serif;
+  letter-spacing: 2px;
 }
 
 h2 {
   font-size: 2rem;
-  font-family: serif;
+  font-family: "Libre Franklin", serif;
+  letter-spacing: 2px;
 }
 
 h3 {
@@ -69,7 +85,6 @@ h4 {
 
 p {
   font-size: 1.5rem;
-  font-family: serif;
 }
 
 footer {
@@ -89,7 +104,12 @@ footer {
 
 .sectionheading {
   text-align: center;
-  padding-bottom: .5rem;
+  padding: .5rem 0;
+}
+
+.nocolor {
+  background-color: white;
+  border: none;
 }
 
 /*  HEADER  */
@@ -122,13 +142,27 @@ header, footer {
 }
 
 #colmar {
-  font-weight: 900
+  font-weight: 700;
   color: black;
+  font-family: "Libre Franklin", sans-serif;
+  letter-spacing: 2px;
+  transition: all 1s ease-out 250ms;
+}
+
+#colmar:hover {
+  font-size: 3rem;
 }
 
 #academy {
-  font-weight: 400;
+  font-weight: 700;
   color: darkgray;
+  font-family: "Libre Franklin", sans-serif;
+  letter-spacing: 2px;
+  transition: all 1s ease-out 250ms;
+}
+
+#academy:hover {
+  font-size: 3rem;
 }
 
 .righthead ul {
@@ -140,6 +174,13 @@ header, footer {
   padding-left: 1rem;
   font-size: 1.5rem;
   text-decoration: none;
+  font-family: "Libre Franklin", sans-serif;
+  transition: font-weight .250ms linear .250ms;
+}
+
+.righthead a:hover {
+  font-weight: 900;
+  color: #0F3AA4;
 }
 
 nav {
@@ -176,6 +217,13 @@ nav {
   width: 60%;
   font-size: 2rem;
   border: 3px solid black;
+  font-family: "Libre Franklin";
+  font-weight: 400;
+  transition: all 100ms linear;
+}
+
+button:active {
+  background-color: #2F343F
 }
 
 /* INFO */
@@ -210,6 +258,7 @@ nav {
   background-color: white;
   width: 32%;
   align-items: stretch;
+  background-color: white;
 }
 
 .rightcontainer.courses img {
@@ -217,22 +266,24 @@ nav {
 }
 
 .supporttext.courses {
-  line-height: 1;
+  line-height: 1.2;
   padding: 0;
 }
 
 .supporttext.courses h2 {
-  line-height: 1;
+  line-height: 1.2;
   padding: 1rem 0 0 1rem;
 }
 
 .supporttext.courses h3 {
-  line-height: 1;
+  line-height: 1.2;
   padding: .5rem 0 0 1rem;
+  font-family: "Libre Franklin";
+  font-weight: 400;
 }
 
 .supporttext.courses h4 {
-  line-height: 1;
+  line-height: 1.5;
   padding: .5rem 0 1.5rem 1rem;
 }
 
@@ -247,12 +298,13 @@ nav {
 #footer {
   color: gray;
   margin-left: 124px;
+  margin-bottom: 2rem;
   height: auto;
   margin-top: 1rem;
 }
 
 #footer a {
-  padding-left: 16px;
+  padding-left: 1rem;
   font-size: 1rem;
   text-decoration: none;
 }
