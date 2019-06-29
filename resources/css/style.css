@@ -112,6 +112,20 @@ footer {
   border: none;
 }
 
+@media only screen and (max-width: 1290px ) {
+  html {
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1090px ) {
+  html {
+    font-family: "Libre Baskerville", serif;
+    font-size: 12px;
+  }
+}
+
 /*  HEADER  */
 
 header, footer {
