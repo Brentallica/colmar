@@ -307,6 +307,10 @@ button:active {
   border: none;
 }
 
+.videocontainer.mobile {
+  display: none;
+}
+
 /* FOOTER */
 
 #footer {
@@ -421,5 +425,23 @@ button:active {
 
   .containernoflex {
       margin: 2rem 1rem 1rem 1rem;
+  }
+
+  .videocontainer.mobile {
+    display: block;
+    margin: 0 0 1.5rem 1rem;
+  }
+
+  #footer.righthead {
+    display: none;
+  }
+
+  #footer {
+    margin: 0 0 0 1rem;
+    padding: 1rem 0;
+  }
+
+
+
 
 }
