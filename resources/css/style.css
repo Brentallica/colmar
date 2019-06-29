@@ -114,6 +114,8 @@ footer {
 
 
 
+
+
 /*  HEADER  */
 
 header, footer {
@@ -189,6 +191,14 @@ nav {
   padding-right: 100px;
 }
 
+.headermobile {
+  display: none;
+}
+
+
+
+
+
 /* BANNER */
 
 .container.banner {
@@ -232,6 +242,10 @@ button:active {
   display: none;
 }
 
+
+
+
+
 /* INFO */
 
 .container.learn {
@@ -247,6 +261,10 @@ button:active {
 .container.info.nocolor.mobile {
   display: none;
 }
+
+
+
+
 
 /* COURSES */
 
@@ -301,6 +319,10 @@ button:active {
   display: none;
 }
 
+
+
+
+
 /* THESIS EXHIBIT */
 
 .rightcontainerboxes.thesis {
@@ -310,6 +332,10 @@ button:active {
 .videocontainer.mobile {
   display: none;
 }
+
+
+
+
 
 /* FOOTER */
 
@@ -327,6 +353,10 @@ button:active {
   text-decoration: none;
 }
 
+
+
+
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1200px ) and (min-width: 1025px) {
@@ -336,7 +366,7 @@ button:active {
   }
 }
 
-/*tablet horizontal */
+/*small screens */
 @media only screen and (max-width: 1024px ) {
   html {
     font-family: "Libre Baskerville", serif;
@@ -345,7 +375,7 @@ button:active {
 
   .container {
     margin: 0;
-    padding: 2.66rem 0;
+    padding: 0;
   }
 
   .logo {
@@ -360,6 +390,7 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 2rem;
   }
 
   .lrgimage.bannerpic {
@@ -424,7 +455,7 @@ button:active {
   }
 
   .containernoflex {
-      margin: 2rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
   }
 
   .videocontainer.mobile {
@@ -441,7 +472,22 @@ button:active {
     padding: 1rem 0;
   }
 
+  .headermobile {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .headermobile img {
+    width: 100%;
+  }
 
+  header {
+    display: none;
+  }
+
+  .rightcontainerboxes {
+    padding-bottom: 1rem;
+  }
 
 }
