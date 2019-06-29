@@ -315,14 +315,7 @@ button:active {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1290px ) amd (min-width: 1091px) {
-  html {
-    font-family: "Libre Baskerville", serif;
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 1090px ) and (min-width: 1025px) {
+@media only screen and (max-width: 1200px ) and (min-width: 1025px) {
   html {
     font-family: "Libre Baskerville", serif;
     font-size: 12px;
@@ -333,12 +326,12 @@ button:active {
 @media only screen and (max-width: 1024px ) {
   html {
     font-family: "Libre Baskerville", serif;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .container {
     margin: 0;
-    padding: 0 0 3.2rem 0;
+    padding: 2.66rem 0;
   }
 
   .logo {
@@ -365,6 +358,35 @@ button:active {
 
   .container.banner {
     display: none;
+  }
+
+  .container.info.nocolor {
+    display: none;
+  }
+
+  .containernoflex.nocolor {
+    display: none;
+  }
+
+  .container.info.nocolor.mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rightcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+  }
+
+  .rightcontainerboxes {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .rightcontainerboxes img {
+    width: 100%;
   }
 
 }
