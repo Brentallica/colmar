@@ -112,6 +112,8 @@ footer {
   border: none;
 }
 
+
+
 /*  HEADER  */
 
 header, footer {
@@ -242,6 +244,10 @@ button:active {
   height: 400px;
 }
 
+.container.info.nocolor.mobile {
+  display: none;
+}
+
 /* COURSES */
 
 .containernoflex.sectionheading {
@@ -291,6 +297,10 @@ button:active {
   padding: .5rem 0 1.5rem 1rem;
 }
 
+.container.startlearning.nocolor.mobile {
+  display: none;
+}
+
 /* THESIS EXHIBIT */
 
 .rightcontainerboxes.thesis {
@@ -326,7 +336,7 @@ button:active {
 @media only screen and (max-width: 1024px ) {
   html {
     font-family: "Libre Baskerville", serif;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .container {
@@ -364,10 +374,6 @@ button:active {
     display: none;
   }
 
-  .containernoflex.nocolor {
-    display: none;
-  }
-
   .container.info.nocolor.mobile {
     display: flex;
     flex-direction: column;
@@ -388,5 +394,32 @@ button:active {
   .rightcontainerboxes img {
     width: 100%;
   }
+
+  #learningfooter {
+    display: none;
+  }
+
+  .container.startlearning.nocolor {
+    display: none;
+  }
+
+  .container.startlearning.nocolor.mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 0 .667rem;
+  }
+
+  .container.startlearning.nocolor.mobile h2 {
+    padding: 1rem 0 1.5rem 1rem;
+    margin-bottom: .5rem;
+    border: 1px solid lightgray;
+  }
+
+  .container.startlearning {
+    margin: 0;
+  }
+
+  .containernoflex {
+      margin: 2rem 1rem 1rem 1rem;
 
 }
